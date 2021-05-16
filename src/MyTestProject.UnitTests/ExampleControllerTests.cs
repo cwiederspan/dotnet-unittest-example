@@ -51,6 +51,7 @@ namespace MyTestProject {
 
             // Assert
             Assert.Equal("Blah", result);
+            execMock.Verify(x => x.Echo(1));
         }
 
         private ExampleController GetController(
